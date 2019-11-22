@@ -18,7 +18,6 @@ cut="${root:13:12}"
 for var in $(ls $cut/certs)
 do
 ru=$(openssl x509 -noout -issuer -dates -in $cut/certs/$var)
-echo $root "ff"
 echo -e $var
 echo -e $ru
 echo -e "  "
